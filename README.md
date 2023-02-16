@@ -108,7 +108,7 @@ The following example uses the variables `applicationClientId` and `applicationC
 ```javascript
 const sstk = require('shutterstock-api');
 
-sstk.setBasicAuth(BE7CL1KtsOgmkunm71HFznLnENpHV9Pd, fW606MvXDEGqSNAG);
+sstk.setBasicAuth(applicationClientId, applicationClientSecret);
 
 const api = new sstk.ImagesApi();
 ```
@@ -445,3 +445,4 @@ Class | Method | HTTP request | Description
 *shutterstock-api.VideosApi* | [**listVideoCategories**](https://github.com/shutterstock/public-api-javascript-sdk/blob/master/docs/VideosApi.md#listVideoCategories) | **GET** /v2/videos/categories | List video categories
 *shutterstock-api.VideosApi* | [**renameVideoCollection**](https://github.com/shutterstock/public-api-javascript-sdk/blob/master/docs/VideosApi.md#renameVideoCollection) | **POST** /v2/videos/collections/{id} | Rename video collections
 *shutterstock-api.VideosApi* | [**searchVideos**](https://github.com/shutterstock/public-api-javascript-sdk/blob/master/docs/VideosApi.md#searchVideos) | **GET** /v2/videos/search | Search for videos
+
